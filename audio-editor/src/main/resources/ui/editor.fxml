@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="8" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.ui.EditorController" prefWidth="800" prefHeight="600">
+  <children>
+    <ToolBar>
+      <Label text="Проєкт:"/>
+      <Label fx:id="lblProject" style="-fx-font-weight: bold;"/>
+      <Separator/>
+      <Button text="Імпорт файлу…" onAction="#onImport"/>
+      <Button text="Експорт…" onAction="#onExport"/>
+    </ToolBar>
+    <Label text="Аудіоресурси:"/>
+    <ListView fx:id="listAssets" VBox.vgrow="ALWAYS"/>
+  </children>
+</VBox>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="app.ui.ProjectsController">
+  <top>
+    <ToolBar>
+      <Button text="Створити" onAction="#onCreate"/>
+      <Button text="Відкрити" onAction="#onOpen"/>
+      <Button text="Видалити" onAction="#onDelete"/>
+      <Separator/>
+      <Label text="Проєкти"/>
+    </ToolBar>
+  </top>
+  <center>
+    <TableView fx:id="table">
+      <columns>
+        <TableColumn fx:id="colName" text="Назва" prefWidth="380"/>
+        <TableColumn fx:id="colRate" text="Sample Rate" prefWidth="120"/>
+        <TableColumn fx:id="colCreated" text="Створено" prefWidth="200"/>
+      </columns>
+    </TableView>
+  </center>
+</BorderPane>

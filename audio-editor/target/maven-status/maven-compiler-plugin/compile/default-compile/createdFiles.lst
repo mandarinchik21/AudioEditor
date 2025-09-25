@@ -1,0 +1,10 @@
+app\repo\JdbcAssetRepository.class
+app\domain\Project.class
+app\ui\EditorController.class
+app\ui\ProjectsController.class
+app\Main.class
+app\service\EditorCoreService.class
+app\domain\AudioAsset.class
+app\config\Database.class
+app\repo\Repository.class
+app\repo\JdbcProjectRepository.class
